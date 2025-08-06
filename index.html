@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>369Wins AR Landing</title>
+  <style>
+    body {
+      background-color: #121212;
+      background-image: url("pattern.png");
+      background-repeat: repeat;
+      color: #fff;
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+    }
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      gap: 20px;
+      padding-top: 40px;
+    }
+    .nav-buttons .main img {
+      width: 160px; /* بزرگتر از دکمه‌های دیگر */
+    }
+    .nav-buttons .group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .nav-buttons a img {
+      width: 120px;
+      cursor: pointer;
+    }
+    .nav-buttons a:hover img {
+      animation: shake 0.5s ease;
+    }
+    @keyframes shake {
+      0%   { transform: translate(0, 0) rotate(0deg); }
+      20%  { transform: translate(-5px, 0) rotate(-3deg); }
+      40%  { transform: translate(5px, 0) rotate(3deg); }
+      60%  { transform: translate(-5px, 0) rotate(-3deg); }
+      80%  { transform: translate(5px, 0) rotate(3deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
+    }
+
+    .floating-text {
+      margin-top: 30px;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: 2px solid #121212;
+      border-radius: 8px;
+      color: #ffffff;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-buttons">
+    <div class="main">
+      <a href="https://m.369wins.com/ar/">
+        <img src="home.png" alt="الرئيسية">
+      </a>
+    </div>
+    <div class="group">
+      <a href="https://www.369wins.com/ar/casino/slots">
+        <img src="casino.png" alt="كازينو">
+      </a>
+      <a href="https://www.369wins.com/ar/sports/pre-match/event-view">
+        <img src="sports.png" alt="الرياضة">
+      </a>
+      <a href="https://www.369wins.com/ar/virtual-sports/home">
+        <img src="virtual.png" alt="الرياضات الافتراضية">
+      </a>
+    </div>
+    <div class="floating-text">أفضل المكافآت في انتظارك!</div>
+  </div>
+</body>
+</html>
